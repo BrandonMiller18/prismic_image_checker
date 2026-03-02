@@ -43,28 +43,28 @@ The script accepts the repository in multiple formats:
 
 ```bash
 # Any of these formats work:
-python find_missing_alt_text.py eisejewels
-python find_missing_alt_text.py eisejewels.prismic.io
-python find_missing_alt_text.py https://eisejewels.prismic.io
+python image_alt_text.py eisejewels
+python image_alt_text.py eisejewels.prismic.io
+python image_alt_text.py https://eisejewels.prismic.io
 ```
 
 ### Private Repository with Access Token
 
 Option 1: Pass token as argument
 ```bash
-python find_missing_alt_text.py eisejewels --token YOUR_ACCESS_TOKEN
+python image_alt_text.py eisejewels --token YOUR_ACCESS_TOKEN
 ```
 
 Option 2: Use environment variable
 ```bash
 export PRISMIC_ACCESS_TOKEN=your_token
-python find_missing_alt_text.py your-repo-name
+python image_alt_text.py your-repo-name
 ```
 
 ### Custom Output File
 
 ```bash
-python find_missing_alt_text.py your-repo-name -o my_report.csv
+python image_alt_text.py your-repo-name -o my_report.csv
 ```
 
 ### Get Help
